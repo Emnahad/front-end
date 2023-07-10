@@ -1,0 +1,31 @@
+form{
+    margin-top:15px;
+    border-radius: 15px;
+    margin-left:70px ;
+    border: 1px solid red;
+    width: 50%;
+    padding-left:15px;
+    padding-right: 15px;
+    box-shadow:15px;
+    background-color: orange;
+    
+}
+.form-control{
+    margin-top :20px;
+    margin-bottom: 20px;
+}
+.container1{
+    background-color:brown;
+   
+  }
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .btn{
+    background-color: brown;
+    width: auto;
+
+  }
