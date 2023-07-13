@@ -1,0 +1,55 @@
+/* Augmenter la taille de l'image */
+.navbar-brand img {
+    height: 150px;
+    margin-right: 80px;
+    margin-top: 75px;
+    /* Ajustez la taille souhaitée */
+}
+
+/* Espacer les éléments de la navigation */
+.navbar-nav .nav-link {
+    margin-right: 70px;
+    margin-top: 70px;
+    color:white;
+    /* Ajustez l'espacement souhaité */
+}
+
+/* Changer le background de l'en-tête */
+.container-fluid {
+    background: linear-gradient(217deg, #343434, rgba(255, 0, 0, 0) 70.71%),
+            linear-gradient(127deg, #444E2B, #343434 70.71%),
+            linear-gradient(336deg, #444E2B, rgba(0, 0, 255, 0) 70.71%);
+    /* Define the background color with transparency */
+    position: fixed;
+    z-index: 9999;
+    height: 150px;
+    border: 0.1px solid whitesmoke;
+    
+}
+
+
+.info-setting {
+    width: 35px;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+}
+
+
+
+.button {
+    background-color: #648F0A;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 0px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 72px;
+    margin-right: 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    height: 40px;
+}
