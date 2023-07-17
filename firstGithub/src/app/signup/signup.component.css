@@ -5,27 +5,41 @@ body {
 
 
     height: 100vh;
-   margin:0;
-   padding-right: 0;
-   margin-right: 0;
+    padding-left: 0;
+}
 
+.im {
+    padding-top: 40px;
+    padding-left: 640px;
+}
+
+.im img {
+    width: 65px;
+    height: 60px;
+    
 }
 
 .contact-info[_ngcontent-ng-c2820415071] {
-    margin-top: -475px;
+    margin-top: 0px;
 
     text-align: right;
-   
+}
+
+.contact-info {
+    margin-right: -10px;
+
 }
 
 .cont {
     margin-right: 10px;
     padding-right: 700px;
+    width: 1300px;
+
 
 }
 
 .contact-info .let {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .contact-info .let img {
@@ -87,7 +101,7 @@ img {
     font-weight: 700;
     font-size: 80px;
     line-height: 106px;
-    padding-top: 80px;
+    padding-top: 0px;
     font-family: 'DM Sans';
     font-style: normal;
 
