@@ -1,4 +1,4 @@
-body {
+.re {
     background: linear-gradient(217deg, #343434, rgba(255, 0, 0, 0) 70.71%),
         linear-gradient(127deg, #444E2B, #343434 70.71%),
         linear-gradient(336deg, #444E2B, rgba(0, 0, 255, 0) 70.71%);
@@ -43,7 +43,7 @@ body {
 }
 
 .im img {
-   width: 500px;
+   width: 530px;
     height: auto;
     margin-top: -220px;
     

@@ -5,27 +5,36 @@ body {
 
 
     height: 100vh;
-   margin:0;
-   padding-right: 0;
-   margin-right: 0;
-
+    padding-left: 0;
 }
 
-.contact-info[_ngcontent-ng-c2820415071] {
-    margin-top: -475px;
+.im {
+    padding-top: 40px;
+    padding-left: 640px;
+}
 
+.im img {
+    width: 65px;
+    height: 60px;
+}
+
+.contact-info {
+    margin-right: 100px;
+    margin-top: -272px;
     text-align: right;
-   
 }
 
 .cont {
     margin-right: 10px;
     padding-right: 700px;
+    padding-top: 30px;
+    width: 1300px;
+
 
 }
 
 .contact-info .let {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .contact-info .let img {
@@ -79,6 +88,12 @@ img {
 
 }
 
+span {
+    color: #88B702;
+    text-decoration: underline;
+    padding-left: 15px;
+}
+
 .container h1 {
     text-align: center;
     align-items: center;
@@ -87,14 +102,14 @@ img {
     font-weight: 700;
     font-size: 80px;
     line-height: 106px;
-    padding-top: 80px;
+    padding-top: 0px;
     font-family: 'DM Sans';
     font-style: normal;
 
 }
 
 .form-group {
-    margin-bottom: 30px;
+    margin-bottom: 55px;
 }
 
 label {
@@ -150,13 +165,13 @@ button {
     background-color: #88B702;
     color: white;
     text-align: center;
-    margin-top: -14px;
+    margin-top: -10px;
     margin-left: 15px;
 }
 
 .contact-info {
-    margin-top: -438px;
-    text-align: right;
+    margin-top: -520px;
+    padding-top: 90px;
 }
 
 .contact-info h2 {
@@ -179,4 +194,11 @@ button {
 .contact-info img {
     height: 20px;
     vertical-align: middle;
+}
+
+.po {
+    color: white;
+    margin-top: 20px;
+    margin-left: 18px;
+    text-decoration: underline;
 }

@@ -10,6 +10,12 @@ import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
 
 import { AboutComponent } from './about/about.component';
+import { RulesComponent } from './rules/rules.component';
+import { SignupComponent } from './signup/signup.component';
+import { SigninComponent } from './signin/signin.component';
+import { ReturnComponent } from './return/return.component';
+import { ProjectComponent } from './project/project.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,12 +25,18 @@ import { AboutComponent } from './about/about.component';
     ContactComponent,
     FaqComponent,
    
-    AboutComponent
+    AboutComponent,
+        RulesComponent,
+        SignupComponent,
+        SigninComponent,
+        ReturnComponent,
+        ProjectComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
