@@ -1,6 +1,7 @@
 .container {
     margin-top: 100px;
 }
+
 .bande {
     background-color: #88B702;
     height: 100px;
@@ -25,12 +26,13 @@
 input {
     border-radius: 100px;
     height: 50px;
-    width: 350px;
+    width: 400px;
     border: 1px solid white;
     margin-right: 40px;
     position: absolute;
-    right: 60px;
-    top: 330px;
+    right: 70px;
+    top: 310px;
+    padding-left: 15px;
 }
 
 
@@ -40,28 +42,55 @@ input {
     border: 1px solid #88B702;
     position: absolute;
     right: 120px;
-    top: 340px;
+    top: 320px;
     color: white;
 
 }
+
 .co {
     background: linear-gradient(217deg, #343434, rgba(255, 0, 0, 0) 70.71%),
         linear-gradient(127deg, #444E2B, #343434 70.71%),
         linear-gradient(336deg, #444E2B, rgba(0, 0, 255, 0) 70.71%);
-
-
-    height: 100vh;
-    margin: 0;
-    padding-right: 0;
-    margin-right: 0;
+        position: relative;
 }
-.card{
+
+.card-body h5 {
+    color: white;
+}
+
+.card-body .card-text {
+    color: white;
+}
+.card-text span{
+    color: white;
+}
+
+.card-body .il {
+    color: #88B702;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+
+    align-items: center;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.card {
     border-radius: 20px;
     box-shadow: #88B702;
-    background-color: #4A4C48;
-    border:solid 2px #88B702;
+    background-color: #41453a;
+    border: solid 2px #88B702;
+    margin-bottom: 30px;
 }
-.card-img-top{
+
+.card-body hr {
+    width: 100%;
+    color: #88B702;
+
+}
+
+.card-img-top {
     border-radius: 20px;
     height: 200px;
 }
@@ -79,3 +108,64 @@ input {
     font-family: 'DM Sans';
     font-style: normal;
 }
+
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.pagination a {
+    color: white;
+    float: left;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+
+    border-radius: 20px;
+    margin: 0px 4px;
+}
+
+.pagination a.active {
+    background-color: #88B702;
+
+    color: #41453a;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #41453a;
+}
+
+.card-body .context {
+    color: #88B702;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.card .il {
+    width: 116px;
+    height: 43px;
+    border-radius: 12px;
+    background-color: #88B702;
+    color: white;
+    text-align: center;
+    margin-top: -1px;
+    margin-left: -2px;
+}
+.loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px; 
+    font-size: 36px;
+    color: #88B702;
+    
+}
+
+
+
