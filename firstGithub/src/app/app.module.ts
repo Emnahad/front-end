@@ -16,6 +16,11 @@ import { SigninComponent } from './signin/signin.component';
 import { ReturnComponent } from './return/return.component';
 import { ProjectComponent } from './project/project.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProjectPopupComponent } from './project-popup/project-popup.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -30,13 +35,20 @@ import { HttpClientModule } from '@angular/common/http';
         SignupComponent,
         SigninComponent,
         ReturnComponent,
-        ProjectComponent
+        ProjectComponent,
+        ProjectPopupComponent,
+       
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MdbModalModule,
+   
+     RouterModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
