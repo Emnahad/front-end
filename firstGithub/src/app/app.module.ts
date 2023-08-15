@@ -1,14 +1,14 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Import BrowserAnimationsModule
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
-
 import { AboutComponent } from './about/about.component';
 import { RulesComponent } from './rules/rules.component';
 import { SignupComponent } from './signup/signup.component';
@@ -17,10 +17,13 @@ import { ReturnComponent } from './return/return.component';
 import { ProjectComponent } from './project/project.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectPopupComponent } from './project-popup/project-popup.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
 import { RouterModule } from '@angular/router';
+import { NgToastModule } from 'ng-angular-popup';
+import { ToastrModule } from 'ngx-toastr';
+import { trigger, transition, style, animate } from '@angular/animations';
+ // Import animation-related symbols
 
 @NgModule({
   declarations: [
@@ -29,28 +32,34 @@ import { RouterModule } from '@angular/router';
     HeaderComponent,
     ContactComponent,
     FaqComponent,
-   
     AboutComponent,
-        RulesComponent,
-        SignupComponent,
-        SigninComponent,
-        ReturnComponent,
-        ProjectComponent,
-        ProjectPopupComponent,
-       
+    RulesComponent,
+    SignupComponent,
+    SigninComponent,
+    ReturnComponent,
+    ProjectComponent,
+    ProjectPopupComponent,
+  
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule, // Include BrowserAnimationsModule
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
     MdbModalModule,
+    ReactiveFormsModule,
+    RouterModule,
+    NgToastModule,
    
-     RouterModule,
-    
-    
+    ToastrModule.forRoot(),
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+  ],
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+
+  
 })
+
 export class AppModule { }
