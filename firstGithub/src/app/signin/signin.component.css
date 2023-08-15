@@ -6,79 +6,21 @@ body {
 
     height: 100vh;
     padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .im {
-    padding-top: 40px;
-    padding-left: 640px;
+    padding-top: 2px;
+    padding-left: 290px;
 }
 
 .im img {
     width: 65px;
     height: 60px;
-}
-
-.contact-info {
-    margin-right: 100px;
-    margin-top: -272px;
-    text-align: right;
-}
-
-.cont {
-    margin-right: 10px;
-    padding-right: 700px;
-    padding-top: 30px;
-    width: 1300px;
-
 
 }
-
-.contact-info .let {
-    margin-top: 30px;
-}
-
-.contact-info .let img {
-    width: 50px;
-    height: 50px;
-}
-
-.contact-info .let p {
-    font-size: 18px;
-    text-decoration: underline;
-}
-
-.contact-info .le {
-    margin-top: 25px;
-    margin-right: 20px;
-}
-
-.contact-info .le img {
-    width: 50px;
-    height: 50px;
-
-}
-
-.contact-info .le p {
-    font-size: 18px;
-    text-decoration: underline;
-
-}
-
-.contact-info .la {
-    margin-top: 25px;
-    margin-right: -77px;
-}
-
-.contact-info .la img {
-    width: 60px;
-    height: 60px;
-}
-
-.contact-info .la p {
-    font-size: 18px;
-    text-decoration: underline;
-}
-
 a {
     margin-right: 111px;
 }
@@ -88,10 +30,18 @@ img {
 
 }
 
-span {
-    color: #88B702;
-    text-decoration: underline;
-    padding-left: 15px;
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Adding a semi-transparent background to the container */
+    padding-top: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    /* Adding a subtle shadow for the box */
+    width: 680px;
+    /* Adjust the width as needed */
+    margin: auto;
+    height: 675px;
+    /* Center the box horizontally */
 }
 
 .container h1 {
@@ -109,7 +59,7 @@ span {
 }
 
 .form-group {
-    margin-bottom: 55px;
+    margin-bottom: 30px;
 }
 
 label {
@@ -135,11 +85,16 @@ textarea {
     display: flex;
     justify-content: space-between;
 
+
+
 }
 
 .form-row .form-group {
     width: 48%;
-    padding-left: 12px;
+    padding-left: 42px;
+    margin-top: 2px;
+    padding-right: 42px;
+
 
 
 }
@@ -165,40 +120,109 @@ button {
     background-color: #88B702;
     color: white;
     text-align: center;
-    margin-top: -10px;
-    margin-left: 15px;
+    margin-top: 5px;
+    margin-left: 271px;
 }
 
-.contact-info {
-    margin-top: -520px;
-    padding-top: 90px;
+
+
+
+.icon-input {
+    position: relative;
 }
 
-.contact-info h2 {
-
-    font-weight: 700;
-    font-size: 30px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    color: #ffffff;
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 1;
+    /* Ensure the icon appears above the input */
 }
 
-.contact-info p {
-    display: inline-block;
-    margin-left: 30px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    color: #ffffff;
+.icon i {
+    font-size: 20px;
+    /* Adjust the icon size as needed */
+    color: #888;
+    /* Adjust the icon color */
 }
 
-.contact-info img {
-    height: 20px;
-    vertical-align: middle;
+.icon-input input {
+    padding-left: 30px;
+    /* Adjust the padding to make space for the icon */
 }
 
-.po {
-    color: white;
-    margin-top: 20px;
-    margin-left: 18px;
-    text-decoration: underline;
+
+.show-password-button {
+    position: absolute;
+    top: 35%;
+    right: -31px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
 }
+
+.show-password-button .fa {
+    font-size: 18px;
+    /* Adjust the icon size as needed */
+    color: #888;
+    /* Adjust the icon color */
+}
+
+.login-link {
+    text-decoration: none;
+    color: #88B702;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.login-link:hover {
+    color: #107633;
+}
+
+.text {
+    text-align: center;
+    margin-left: 101px;
+    margin-top: 30px;
+}
+.text span{
+    text-align: center;
+        font-weight: bold;
+        color: #ffffff;
+        margin-top: 15px;
+}
+.pt-4 {
+    padding-top: 1rem;
+}
+.tex{
+text-align: center;
+}
+ .tex span {
+     text-align: center;
+     font-weight: bold;
+     color: #ffffff;
+     
+ }
+
+
+ .conv {
+     text-align: center;
+     margin-top: 20px;
+ }
+
+ .conv a {
+     color: #88B702;
+     margin: 0 10px;
+ }
+
+ .dr {
+     text-decoration: none;
+     font-size: 24px;
+ }
+ .error {
+     border: 1px solid red;
+    border-radius: 20px;
+ }

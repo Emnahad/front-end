@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -8,7 +7,6 @@
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <img class="info-setting" src="{{ iconPath2 }}" alt="Icône">
                 <a class="nav-link " href="#Home"> Home</a>
                 <a class="nav-link" href="#about-section">About us</a>
                 <a class="nav-link" routerLink="/">our team</a>
@@ -17,9 +15,60 @@
                 <a class="nav-link" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">
                     Contact us
                 </a>
+
+            </div>
+            <!-- Rest of the navbar content -->
+            <ng-container *ngIf="Isloggedin; else signInSignUpButtons">
+                <div class="user-profile">
+
+                    <img (click)="show()" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/06/06/15/Chris-Pratt.jpg">
+                    <div class="pill">
+                        <h5>Hello,{{user.unique_name}}</h5>
+                    </div>
+
+                </div>
+            </ng-container>
+            <ng-template #signInSignUpButtons>
+                <!-- Sign In and Sign Up buttons -->
                 <button routerLink="/signup" class="button">Sign up</button>
                 <button routerLink="/signin" class="button">Sign in</button>
-            </div>
+            </ng-template>
+            <!-- Rest of the navbar content -->
+
+
         </div>
     </div>
 </nav>
+<div class="over-lay" *ngIf="AfficheCard">
+
+
+    <div class="card2">
+        <button type="button" class="btn-close" (click)="close()"></button>
+        <div class="sub-menu-wrap">
+            <div class="sub-menu">
+                <div class="user-info">
+                   
+                    <h6>James Aldrino</h6>
+                </div>
+                <hr>
+                <a href="#" class="sub-menu-link">
+                    <img src="https://img.freepik.com/icones-gratuites/utilisateur_318-563642.jpg?w=360"
+                        style='font-size:24px'>
+                    <p>Edit Profile</p>
+
+
+                </a>
+               
+                
+                <a (click)="logout()" class="sub-menu-link">
+                    <img
+                        src="https://static.vecteezy.com/system/resources/previews/000/575/503/original/vector-logout-sign-icon.jpg">
+                    <p>LogOut</p>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

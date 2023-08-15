@@ -6,83 +6,22 @@ body {
 
     height: 100vh;
     padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .im {
-    padding-top: 40px;
-    padding-left: 640px;
+    padding-top: 2px;
+    padding-left: 290px;
 }
 
 .im img {
     width: 65px;
     height: 60px;
-    
-}
-
-.contact-info[_ngcontent-ng-c2820415071] {
-    margin-top: 0px;
-
-    text-align: right;
-}
-
-.contact-info {
-    margin-right: -10px;
 
 }
 
-.cont {
-    margin-right: 10px;
-    padding-right: 700px;
-    width: 1300px;
-
-
-}
-
-.contact-info .let {
-    margin-top: 30px;
-}
-
-.contact-info .let img {
-    width: 50px;
-    height: 50px;
-}
-
-.contact-info .let p {
-    font-size: 18px;
-    text-decoration: underline;
-}
-
-.contact-info .le {
-    margin-top: 25px;
-    margin-right: 20px;
-}
-
-.contact-info .le img {
-    width: 50px;
-    height: 50px;
-
-}
-
-.contact-info .le p {
-    font-size: 18px;
-    text-decoration: underline;
-
-}
-
-.contact-info .la {
-    margin-top: 25px;
-    margin-right: -77px;
-}
-
-.contact-info .la img {
-    width: 60px;
-    height: 60px;
-}
-
-.contact-info .la p {
-    font-size: 18px;
-    text-decoration: underline;
-}
 
 a {
     margin-right: 111px;
@@ -91,6 +30,19 @@ a {
 img {
     width: 50px;
 
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Adding a semi-transparent background to the container */
+    padding-top: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    /* Adding a subtle shadow for the box */
+    width: 680px;
+    /* Adjust the width as needed */
+    margin: auto;
+    /* Center the box horizontally */
 }
 
 .container h1 {
@@ -134,11 +86,16 @@ textarea {
     display: flex;
     justify-content: space-between;
 
+
+
 }
 
 .form-row .form-group {
     width: 48%;
-    padding-left: 12px;
+    padding-left: 42px;
+    margin-top: -26px;
+    padding-right: 42px;
+
 
 
 }
@@ -165,32 +122,74 @@ button {
     color: white;
     text-align: center;
     margin-top: -14px;
-    margin-left: 15px;
+    margin-left: 271px;
 }
 
-.contact-info {
-    margin-top: -438px;
-    text-align: right;
+
+
+.icon-input {
+    position: relative;
 }
 
-.contact-info h2 {
-
-    font-weight: 700;
-    font-size: 30px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    color: #ffffff;
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 1;
+    /* Ensure the icon appears above the input */
 }
 
-.contact-info p {
-    display: inline-block;
-    margin-left: 30px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    color: #ffffff;
+.icon i {
+    font-size: 20px;
+    /* Adjust the icon size as needed */
+    color: #888;
+    /* Adjust the icon color */
 }
 
-.contact-info img {
-    height: 20px;
-    vertical-align: middle;
+.icon-input input {
+    padding-left: 30px;
+    /* Adjust the padding to make space for the icon */
+}
+
+/* Your existing styles */
+
+.show-password-button {
+    position: absolute;
+    top: 75%;
+    right: -31px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+
+.show-password-button .fa {
+    font-size: 18px;
+    /* Adjust the icon size as needed */
+    color: #888;
+    /* Adjust the icon color */
+}
+
+.signup-link {
+    text-decoration: none;
+    color: #88B702;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.signup-link:hover {
+    color: #107633;
+}
+
+.text {
+    text-align: center;
+    margin-left: 101px;
+    margin-top: 10px;
+}
+
+.pt-4 {
+    padding-top: 1rem;
 }
